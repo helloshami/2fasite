@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <title>2FASite – Free Browser TOTP Generator</title>
+
+  <meta
+    name="description"
+    content="Generate RFC 6238 compliant TOTP authentication codes securely in your browser. No account required. No tracking. No data leaves your device.">
+
+  <meta
+    name="keywords"
+    content="totp generator,2fa generator,authenticator,otp,rfc6238,browser authenticator">
+
+  <meta name="author" content="2FASite">
+
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <meta name="theme-color" content="#111827">
+
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:title"
+    content="2FASite">
+
+  <meta
+    property="og:description"
+    content="Privacy-first browser TOTP Generator">
+
+  <meta
+    property="og:url"
+    content="https://2fasite.com/">
+
+  <meta
+    property="og:image"
+    content="https://2fasite.com/assets/social-preview.png">
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="2FASite">
+
+  <meta
+    name="twitter:description"
+    content="Generate TOTP codes securely inside your browser.">
+
+  <link
+    rel="canonical"
+    href="https://2fasite.com/">
+
+  <link
+    rel="manifest"
+    href="manifest.json">
+
+  <link
+    rel="icon"
+    href="assets/favicon.svg"
+    type="image/svg+xml">
+
+  <link
+    rel="stylesheet"
+    href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"2FASite",
+    "applicationCategory":"SecurityApplication",
+    "operatingSystem":"Any",
+    "url":"https://2fasite.com/",
+    "description":"Browser-only RFC 6238 compliant TOTP generator.",
+    "offers":{
+      "@type":"Offer",
+      "price":"0",
+      "priceCurrency":"USD"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">
+  Skip to content
+</a>
+
+<header class="site-header">
+
+  <div class="container">
+
+    <a href="/" class="logo" aria-label="2FASite Home">
+
+      <img
+        src="assets/logo.svg"
+        alt="2FASite"
+        width="40"
+        height="40">
+
+      <span>2FASite</span>
+
+    </a>
+
+    <nav class="top-nav">
+
+      <a href="pages/faq.html">FAQ</a>
+
+      <a href="pages/privacy.html">Privacy</a>
+
+      <a href="pages/about.html">About</a>
+
+      <button
+        id="themeToggle"
+        class="icon-button"
+        aria-label="Toggle color theme">
+
+        🌙
+
+      </button>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<main id="main">
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+
+Browser TOTP Generator
+
+</h1>
+
+<p>
+
+Generate secure authentication codes completely inside your browser.
+
+Nothing is uploaded.
+
+Nothing is stored.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="generator">
+
+<div class="container">
+
+<div class="card">
+
+<form id="totpForm" autocomplete="off">
+
+<label for="secret">
+
+Secret Key
+
+</label>
+
+<input
+id="secret"
+name="secret"
+type="text"
+spellcheck="false"
+autocapitalize="off"
+autocomplete="off"
+placeholder="JBSWY3DPEHPK3PXP"
+required>
+
+<div class="button-row">
+
+<button
+type="button"
+id="pasteBtn">
+
+Paste
+
+</button>
+
+<button
+type="button"
+id="clearBtn">
+
+Clear
+
+</button>
+
+</div>
