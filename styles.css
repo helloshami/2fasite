@@ -7,8 +7,8 @@
   --muted-light: #6b7280;
   --border: #e5e5e5;
   --soft: #f9fafb;
-  --blue: #2563eb;
-  --blue-hover: #1d4ed8;
+  --blue: #1d4ed8;
+  --blue-hover: #2563eb;
   --red: #dc2626;
 }
 
@@ -21,8 +21,8 @@
   --muted-light: #8B93A1;
   --border: #27272A;
   --soft: #17181C;
-  --blue: #2563eb;
-  --blue-hover: #1d4ed8;
+  --blue: #1d4ed8;
+  --blue-hover: #2563eb;
 }
 
 * {
