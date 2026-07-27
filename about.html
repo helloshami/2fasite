@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about 2FASite, a free and privacy-focused two-factor authentication code generator." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>About - 2FASite</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page about-page">
+      <header class="site-header">
+        <div class="header-container">
+          <div class="header-row">
+            <a class="brand" href="index.html">
+              <span class="logo-mark" aria-hidden="true"></span>
+              <span>2FASite</span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+              <a href="index.html#generator">Generator</a>
+              <a href="index.html#how-to-use">How to Use</a>
+              <span class="active-link">About</span>
+            </nav>
+
+            <div class="about-header-actions">
+              <button class="square-button theme-button" type="button" data-theme-toggle aria-label="Toggle theme">
+                <span aria-hidden="true">☼</span>
+              </button>
+              <a class="outline-button back-button" href="index.html">
+                <span class="button-icon" aria-hidden="true">←</span>
+                <span>Back to Generator</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="about-main">
+        <div class="about-container">
+          <section class="about-hero">
+            <span class="about-logo logo-mark" aria-hidden="true"></span>
+            <h1>About 2FASite</h1>
+            <p>A free, secure, and privacy-focused two-factor authentication code generator that works entirely in your browser.</p>
+            <div class="about-divider"></div>
+          </section>
+
+          <section class="about-section-card mission-card">
+            <div class="about-card-padding large">
+              <h2>Our Mission</h2>
+              <p>We believe that everyone deserves access to secure, reliable two-factor authentication tools without compromising their privacy or paying expensive fees. 2FASite was created to provide a simple, trustworthy solution that puts your security and privacy first.</p>
+            </div>
+          </section>
+
+          <section class="feature-grid" aria-label="Key features">
+            <article class="feature-card green">
+              <div class="about-card-padding">
+                <div class="feature-heading">
+                  <span class="feature-icon" aria-hidden="true">▣</span>
+                  <h3>Privacy First</h3>
+                </div>
+                <p>Your secret keys are used only in the open page and are never saved or sent to a server.</p>
+                <span class="feature-badge">In-memory only</span>
+              </div>
+            </article>
+
+            <article class="feature-card blue">
+              <div class="about-card-padding">
+                <div class="feature-heading">
+                  <span class="feature-icon" aria-hidden="true">◎</span>
+                  <h3>Works Offline</h3>
+                </div>
+                <p>Once loaded, the generator works without an internet connection. Perfect for travel, areas with poor connectivity, or when you need maximum security.</p>
+                <span class="feature-badge">No Internet Required</span>
+              </div>
+            </article>
+
+            <article class="feature-card purple">
+              <div class="about-card-padding">
+                <div class="feature-heading">
+                  <span class="feature-icon phone-icon" aria-hidden="true">▯</span>
+                  <h3>Universal Compatibility</h3>
+                </div>
+                <p>Generates standard TOTP codes that work with Google Authenticator, Authy, Microsoft Authenticator, and any other RFC 6238 compliant application.</p>
+                <span class="feature-badge">RFC 6238 Standard</span>
+              </div>
+            </article>
+
+            <article class="feature-card orange">
+              <div class="about-card-padding">
+                <div class="feature-heading">
+                  <span class="feature-icon mini-shield" aria-hidden="true">◇</span>
+                  <h3>Open Source Security</h3>
+                </div>
+                <p>Built with transparency in mind. Our code uses industry-standard cryptographic libraries and follows security best practices you can verify.</p>
+                <span class="feature-badge">Transparent &amp; Secure</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="about-section-card">
+            <div class="about-card-padding large">
+              <h2>How It Works</h2>
+              <div class="numbered-list">
+                <article>
+                  <span class="number">1</span>
+                  <div>
+                    <h4>Enter Your Secret Key</h4>
+                    <p>Paste the secret key provided by your service (Google, GitHub, etc.) when setting up 2FA.</p>
+                  </div>
+                </article>
+                <article>
+                  <span class="number">2</span>
+                  <div>
+                    <h4>Automatic Code Generation</h4>
+                    <p>Our algorithm generates a new 6-digit code every 30 seconds using the TOTP standard.</p>
+                  </div>
+                </article>
+                <article>
+                  <span class="number">3</span>
+                  <div>
+                    <h4>Use Your Code</h4>
+                    <p>Click to copy the code and paste it into your login form. Codes refresh automatically.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="about-section-card security-card">
+            <div class="about-card-padding large">
+              <h2>Security &amp; Privacy</h2>
+              <div class="security-list">
+                <p><strong>No Secret Storage:</strong> Your secret keys exist only in the open page while generating codes and are never written to browser storage.</p>
+                <p><strong>No Analytics:</strong> We don't track your usage, collect personal data, or use cookies for tracking purposes.</p>
+                <p><strong>HTTPS Only:</strong> All connections are encrypted and we use modern security headers to protect against common web vulnerabilities.</p>
+                <p><strong>Standard Algorithms:</strong> We use the same cryptographic standards (HMAC-SHA1, Base32) as major authenticator apps.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="about-section-card">
+            <div class="about-card-padding large">
+              <h2>Frequently Asked Questions</h2>
+              <div class="faq-list">
+                <article>
+                  <h4>Is this safe to use?</h4>
+                  <p>Yes! Your secret keys never leave your device. We use the same security standards as Google Authenticator and other trusted apps.</p>
+                </article>
+                <article>
+                  <h4>What if I lose my secret keys?</h4>
+                  <p>Keys are not saved here, so keep the original setup key or backup codes from your service in a secure place.</p>
+                </article>
+                <article>
+                  <h4>Does this work on mobile?</h4>
+                  <p>The site is fully responsive and works great on phones and tablets.</p>
+                </article>
+                <article>
+                  <h4>Is this free?</h4>
+                  <p>Yes, completely free with no hidden costs, premium features, or subscription plans.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <a class="footer-brand" href="index.html">
+              <span class="logo-mark small" aria-hidden="true"></span>
+              <span>2FASite</span>
+            </a>
+            <p>© 2025 All Rights Reserved.</p>
+            <nav aria-label="Footer navigation">
+              <a href="about.html">About</a>
+              <a href="index.html#generator">Generator</a>
+              <a href="mailto:hello@2fa.online">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="about.js"></script>
+  </body>
+</html>

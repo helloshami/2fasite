@@ -1,1 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generate TOTP two-factor authentication codes securely in your browser." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>2FASite - Free 2FA Code Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="header-container">
+          <div class="header-row">
+            <a class="brand" href="#generator" aria-label="2FASite home">
+              <span class="logo-mark" aria-hidden="true"></span>
+              <span>2FASite</span>
+            </a>
 
+            <nav class="desktop-nav" aria-label="Main navigation">
+              <a href="#generator">Generator</a>
+              <a href="#how-to-use">How to Use</a>
+              <a href="about.html">About</a>
+            </nav>
+
+            <div class="desktop-actions">
+              <button class="outline-button" type="button" data-refresh>
+                <span class="button-icon" aria-hidden="true">↻</span>
+                <span>Refresh</span>
+              </button>
+              <button class="square-button theme-button" type="button" data-theme-toggle aria-label="Toggle theme">
+                <span aria-hidden="true">☼</span>
+              </button>
+            </div>
+
+            <div class="mobile-actions">
+              <button class="square-button theme-button" type="button" data-theme-toggle aria-label="Toggle theme">
+                <span aria-hidden="true">☼</span>
+              </button>
+              <button class="menu-button" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+              </button>
+            </div>
+          </div>
+          <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+            <a href="#generator">Generator</a>
+            <a href="#how-to-use">How to Use</a>
+            <a href="about.html">About</a>
+            <button type="button" data-refresh>Refresh codes</button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="main-container">
+          <section class="intro" id="generator">
+            <h1>Free 2FA Code Generator</h1>
+            <p class="intro-lead">Generate TOTP codes instantly from your secret keys</p>
+            <p class="intro-muted">Secure, fast, and works offline in your browser</p>
+            <div class="divider"></div>
+          </section>
+
+          <section class="account-list" data-account-list aria-label="2FA generator">
+            <div class="account-block" data-account-card>
+              <article class="generator-card">
+                <div class="generator-card-content">
+                  <label class="field secret-field">
+                    <span>Secret Key</span>
+                    <span class="secret-wrap">
+                      <input type="password" data-secret-key placeholder="Paste your secret key here..." autocomplete="off" autocapitalize="off" spellcheck="false" />
+                      <button class="reveal-button" type="button" data-reveal-secret aria-label="Show secret key">◎</button>
+                    </span>
+                  </label>
+
+                  <div class="code-box">
+                    <button class="code-value" type="button" data-copy-code aria-label="Copy code">
+                      <span data-code-value>••••••</span>
+                    </button>
+                    <div class="code-actions">
+                      <span class="status-badge" data-status>Waiting for key</span>
+                      <button class="copy-button" type="button" data-copy-code aria-label="Copy code">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <rect x="8" y="8" width="11" height="11" rx="2"></rect>
+                          <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="field-error" data-error></p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="timer-card">
+                <div class="timer-content">
+                  <span class="timer-icon" aria-hidden="true">◷</span>
+                  <div class="timer-copy">
+                    <strong><span data-timer>30</span>s</strong>
+                    <span>until next refresh</span>
+                  </div>
+                  <div class="progress-track" aria-hidden="true"><span data-progress></span></div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="info-card how-to-card" id="how-to-use">
+            <div class="info-card-content">
+              <h2>How to Use</h2>
+              <div class="instruction-list">
+                <p>• Paste the secret key from your 2FA setup</p>
+                <p>• Your code will generate automatically every 30 seconds</p>
+                <p>• Click the code to copy it to your clipboard</p>
+                <p>• Your secret keys stay only in this open page and are never saved</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer" id="about">
+        <div class="footer-container">
+          <div class="footer-row">
+            <a class="footer-brand" href="#generator">
+              <span class="logo-mark small" aria-hidden="true"></span>
+              <span>2FASite</span>
+            </a>
+            <p>© 2026 All Rights Reserved.</p>
+            <nav aria-label="Footer navigation">
+              <a href="about.html">About</a>
+              <a href="#generator">Generator</a>
+              <a href="mailto:hello@2fa.online">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
