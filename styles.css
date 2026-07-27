@@ -14,15 +14,15 @@
 
 [data-theme="dark"] {
   color-scheme: dark;
-  --background: #030712;
-  --foreground: #fafafa;
-  --card: #030712;
-  --muted: #d1d5db;
-  --muted-light: #9ca3af;
-  --border: #1f2937;
-  --soft: #111827;
-  --blue: #60a5fa;
-  --blue-hover: #3b82f6;
+  --background: #08090A;
+  --foreground: #F7F8F8;
+  --card: #111113;
+  --muted: #B6BCC8;
+  --muted-light: #8B93A1;
+  --border: #27272A;
+  --soft: #17181C;
+  --blue: #5E6AD2;
+  --blue-hover: #6B77E5;
 }
 
 * {
