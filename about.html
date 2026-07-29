@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Learn about 2FASite, a free and privacy-focused two-factor authentication code generator." />
     <meta name="theme-color" content="#ffffff" />
-    <title>About - 2FASite</title>
+    <title>About - 2FA Site</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,7 +15,7 @@
           <div class="header-row">
             <a class="brand" href="index.html">
               <span class="logo-mark" aria-hidden="true"></span>
-              <span>2FASite</span>
+              <span>2FA Site</span>
             </a>
 
             <nav class="desktop-nav" aria-label="Main navigation">
@@ -42,14 +42,14 @@
           <section class="about-hero">
             <span class="about-logo logo-mark" aria-hidden="true"></span>
             <h1>About 2FASite</h1>
-            <p>A free, secure, and privacy-focused two-factor authentication code generator that works entirely in your browser.</p>
+            <p>Free online 2FA Code generator for two-factor authentication. Runs entirely in your browser to keep your secret keys private, secure, and under your control.</p>
             <div class="about-divider"></div>
           </section>
 
           <section class="about-section-card mission-card">
             <div class="about-card-padding large">
               <h2>Our Mission</h2>
-              <p>We believe that everyone deserves access to secure, reliable two-factor authentication tools without compromising their privacy or paying expensive fees. 2FASite was created to provide a simple, trustworthy solution that puts your security and privacy first.</p>
+              <p>We believe strong online security should be simple, private, and accessible to everyone. That's why 2FASite was built—to provide a free, reliable browser-based TOTP generator that protects your privacy while making two-factor authentication quick and easy. Your secret keys stay on your device, and your data remains under your control.</p>
             </div>
           </section>
 
@@ -60,7 +60,7 @@
                   <span class="feature-icon" aria-hidden="true">▣</span>
                   <h3>Privacy First</h3>
                 </div>
-                <p>Your secret keys are used only in the open page and are never saved or sent to a server.</p>
+                <p>Your secret keys never leave your browser. They are used only to generate TOTP codes and are never stored, uploaded, or transmitted to any server.</p>
                 <span class="feature-badge">In-memory only</span>
               </div>
             </article>
@@ -71,7 +71,7 @@
                   <span class="feature-icon" aria-hidden="true">◎</span>
                   <h3>Works Offline</h3>
                 </div>
-                <p>Once loaded, the generator works without an internet connection. Perfect for travel, areas with poor connectivity, or when you need maximum security.</p>
+                <p>After the initial page load, the generator works completely offline. Generate TOTP codes anywhere—even while traveling, in low-connectivity areas, or whenever you prefer to keep everything local.</p>
                 <span class="feature-badge">No Internet Required</span>
               </div>
             </article>
@@ -82,7 +82,7 @@
                   <span class="feature-icon phone-icon" aria-hidden="true">▯</span>
                   <h3>Universal Compatibility</h3>
                 </div>
-                <p>Generates standard TOTP codes that work with Google Authenticator, Authy, Microsoft Authenticator, and any other RFC 6238 compliant application.</p>
+                <p>Generate RFC 6238-compliant TOTP codes that work with Google Authenticator, Microsoft Authenticator, Authy, and virtually any compatible authentication app.</p>
                 <span class="feature-badge">RFC 6238 Standard</span>
               </div>
             </article>
@@ -93,7 +93,7 @@
                   <span class="feature-icon mini-shield" aria-hidden="true">◇</span>
                   <h3>Open Source Security</h3>
                 </div>
-                <p>Built with transparency in mind. Our code uses industry-standard cryptographic libraries and follows security best practices you can verify.</p>
+                <p>Built with transparency in mind. 2FASite uses the browser's trusted Web Crypto API and follows established security best practices, so you can verify how everything works.</p>
                 <span class="feature-badge">Transparent &amp; Secure</span>
               </div>
             </article>
@@ -107,21 +107,21 @@
                   <span class="number">1</span>
                   <div>
                     <h4>Enter Your Secret Key</h4>
-                    <p>Paste the secret key provided by your service (Google, GitHub, etc.) when setting up 2FA.</p>
+                    <p>Paste the TOTP secret key provided during your account's two-factor authentication setup to start generating secure verification codes.</p>
                   </div>
                 </article>
                 <article>
                   <span class="number">2</span>
                   <div>
                     <h4>Automatic Code Generation</h4>
-                    <p>Our algorithm generates a new 6-digit code every 30 seconds using the TOTP standard.</p>
+                    <p>A new 6-digit TOTP verification code is generated every 30 seconds in accordance with the RFC 6238 standard.</p>
                   </div>
                 </article>
                 <article>
                   <span class="number">3</span>
                   <div>
                     <h4>Use Your Code</h4>
-                    <p>Click to copy the code and paste it into your login form. Codes refresh automatically.</p>
+                    <p>Click to copy the current verification code, then paste it into the login form. A new code is generated automatically every 30 seconds.</p>
                   </div>
                 </article>
               </div>
@@ -133,9 +133,9 @@
               <h2>Security &amp; Privacy</h2>
               <div class="security-list">
                 <p><strong>No Secret Storage:</strong> Your secret keys exist only in the open page while generating codes and are never written to browser storage.</p>
-                <p><strong>No Analytics:</strong> We don't track your usage, collect personal data, or use cookies for tracking purposes.</p>
-                <p><strong>HTTPS Only:</strong> All connections are encrypted and we use modern security headers to protect against common web vulnerabilities.</p>
-                <p><strong>Standard Algorithms:</strong> We use the same cryptographic standards (HMAC-SHA1, Base32) as major authenticator apps.</p>
+                <p><strong>Privacy First:</strong> We don't collect personal information, monitor how you use the site, or use tracking cookies or analytics.</p>
+                <p><strong>Secure Connections:</strong> All communication is protected with HTTPS, and modern browser security headers help defend against common web-based attacks.</p>
+                <p><strong>Standards Compliant:</strong> 2FA Site implements the RFC 6238 TOTP standard using Base32 secrets and HMAC-SHA1, ensuring compatibility with leading authenticator apps.</p>
               </div>
             </div>
           </section>
@@ -145,20 +145,20 @@
               <h2>Frequently Asked Questions</h2>
               <div class="faq-list">
                 <article>
-                  <h4>Is this safe to use?</h4>
-                  <p>Yes! Your secret keys never leave your device. We use the same security standards as Google Authenticator and other trusted apps.</p>
+                  <h4>Is 2FA Site safe to use?</h4>
+                  <p>Yes. All TOTP codes are generated locally in your browser, so your secret keys never leave your device. No data is uploaded or stored, and the generator follows the RFC 6238 standard used by popular authenticator apps.</p>
                 </article>
                 <article>
-                  <h4>What if I lose my secret keys?</h4>
-                  <p>Keys are not saved here, so keep the original setup key or backup codes from your service in a secure place.</p>
+                  <h4>What happens if I lose my secret key?</h4>
+                  <p>2FA Site does not store or back up your secret keys. Be sure to save the original setup key or the recovery codes provided by the service when you enable two-factor authentication.</p>
                 </article>
                 <article>
-                  <h4>Does this work on mobile?</h4>
-                  <p>The site is fully responsive and works great on phones and tablets.</p>
+                  <h4>Can I use 2FA Site on my phone?</h4>
+                  <p>Yes. 2FA Site is fully responsive and works smoothly on smartphones, tablets, laptops, and desktop computers with any modern web browser.</p>
                 </article>
                 <article>
-                  <h4>Is this free?</h4>
-                  <p>Yes, completely free with no hidden costs, premium features, or subscription plans.</p>
+                  <h4>Is 2FA Site really free?</h4>
+                  <p>Yes. All features are available at no cost. There are no subscriptions, premium plans, hidden fees, or account registration requirements.</p>
                 </article>
               </div>
             </div>
@@ -171,9 +171,9 @@
           <div class="footer-row">
             <a class="footer-brand" href="index.html">
               <span class="logo-mark small" aria-hidden="true"></span>
-              <span>2FASite</span>
+              <span>2FA Site</span>
             </a>
-            <p>© 2025 All Rights Reserved.</p>
+            <p>© 2026 All Rights Reserved.</p>
             <nav aria-label="Footer navigation">
               <a href="about.html">About</a>
               <a href="index.html#generator">Generator</a>
