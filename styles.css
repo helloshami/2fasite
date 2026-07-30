@@ -352,7 +352,7 @@ a {
   right: 8px;
   width: 36px;
   height: 36px;
-  border: 0;
+  border: 1;
   border-radius: 6px;
   transform: translateY(-50%);
   background: transparent;
