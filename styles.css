@@ -119,36 +119,17 @@ a {
   color: #f9fafb;
 }
 
-.logo-mark {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  flex: 0 0 auto;
-  display: inline-grid;
-  place-items: center;
-  border-radius: 8px;
-  background: #2563eb;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.24);
+.logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-.logo-mark::before {
-  content: "2F";
-  color: #ffffff;
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.06em;
-}
-
-.logo-mark.small {
-  width: 20px;
-  height: 20px;
-  border-radius: 6px;
-}
-
-.logo-mark.small::before {
-  font-size: 9px;
+.footer-logo {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
 .desktop-nav {
@@ -673,15 +654,10 @@ a {
 
 .about-logo {
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
   margin: 0 auto 24px;
-  border-radius: 19px;
-  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.26), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.about-logo::before {
-  font-size: 28px;
 }
 
 .about-hero h1 {
